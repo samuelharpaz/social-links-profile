@@ -1,45 +1,10 @@
 /*
---- 01 TYPOGRAPHY SYSTEM
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-Body: 14px
+--- TYPOGRAPHY
 
 - Font weights
 Default: 400
 Semi-bold: 600
 Bold: 700
-
-- Line heights
-Paragraph default: 1.5
-
-- Letter spacing
-
-
---- 02 COLORS
-
-- Primary:
-#fff
-
-Tints (lightest to darkest):
-
-
-Shades (lightest to darkest:
-
-- Accents:
-1) #c4f82a
-2)
-
-- Greys
-- Grey 700: hsl(0, 0%, 20%)
-- Grey 800: hsl(0, 0%, 12%)
-- Grey 900: hsl(0, 0%, 8%)
-
-#333
-#1f1f1f
-#141414
-
 
 --- 05 SHADOWS
 
@@ -197,6 +162,14 @@ body {
   background-color: var(--color-grey-700);
   font-weight: 700;
   border-radius: var(--br-sm);
+
+  transition: all 0.1s;
+}
+
+.social__link:hover,
+.social__link:active {
+  background-color: var(--color-accent);
+  color: var(--color-grey-700);
 }
 
 @media (max-width: 383px) {
